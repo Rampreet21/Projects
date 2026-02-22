@@ -6,3 +6,7 @@ h1{
     text-decoration: none;
     color: black;
 }
+
+.price{
+    font-weight: bold;
+}

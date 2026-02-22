@@ -110,6 +110,11 @@ img {
     font-size: 14px;
 }
 
+.row a{
+    text-decoration: none;
+    color: black;
+}
+
 .s {
     margin-top: 15px;
     padding-top: 20px;
@@ -323,8 +328,8 @@ img {
 }
 
 .insta-id {
-    background: url(/Project/img/instaid.png);
-    height: 40vh;
+    background: url(/Project/img/instaid2.png);
+    height: 30vh;
     background-size: cover;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
@@ -368,4 +373,14 @@ footer {
     height: 30%;
     background: #0a0a0ad9;
     padding: 10px;
+}
+
+
+.linkk a{
+    display: flex;
+}
+
+.a{
+    text-decoration: none;
+    color: black;
 }
