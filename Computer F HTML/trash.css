@@ -1,0 +1,52 @@
+
+
+.footer {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #111;
+}
+.footer .footer2{
+    max-width: 600px;
+    
+}
+
+.footer h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #888;
+    font-size: 1.5em; /* Adjust icon size */
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #333;
+}
+
+.copyright {
+    font-size: 0.8em;
+    color: #888;
+}
+
+.copyright span {
+    color: #e91e63; /* Heart color */
+}

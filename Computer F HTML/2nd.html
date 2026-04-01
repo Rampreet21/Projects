@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenovo LOQ Tower</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            color: #fff;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 80px;
+            background: transparent;
+        }
+        .logo {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #ffffff;
+        }
+        .logo img {
+            display: flex-box;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            width: 25px;
+            height: 25px;
+            top: 4px;
+            border-radius: 50%;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+        
+        nav ul li a {
+            position: relative;
+            color: white;
+            text-decoration: none;
+            font-size: 0.9em;
+            font-weight: 500;
+            top: 4px;
+        }
+        nav ul li img {
+            display: flex-box;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            width: 25px;
+            height: 25px;
+            top: 0;
+            border-radius: 50%;
+        }
+
+
+        .hero {
+            position: relative;
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 0 60px;
+            background-size: cover;
+            background-position: center;
+            text-align: left;
+        }
+        .hero3 {
+            position: relative;
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 0 60px;
+            background-size: cover;
+            background-position: center;
+            text-align: left;
+        }
+        .hero2 {
+            position: relative;
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 0 60px;
+            background-size: cover;
+            background-position: center;
+            text-align: left;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            
+
+
+            overflow: hidden;
+        }
+
+        .image-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 200px;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .content-container {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .title {
+            font-size: 3em;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        .rating {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .rating span {
+            margin-left: 5px;
+            color: #ffffff;
+        }
+
+        .price {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .exchange-offer {
+            font-size: 0.9em;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .exchange-offer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .button {
+            background-color: #007bff;
+            color: rgb(255, 255, 255);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .added-to-cart {
+            font-size: 0.8em;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        .added-to-cart::before {
+            content: "🛒 ";
+        }
+
+
+        .container2 {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .product2 {
+            text-align: center;justify-content: center;
+            flex-direction: column;
+            padding: 200px;display: flex;
+        }
+
+        .product2 img {
+
+            width: 100%;
+            height: auto;
+            margin-top: 40px;
+            margin-bottom: 0;
+        }
+
+        .product2 h2 {
+            font-size: 1.5em;
+            margin-bottom: 0;
+            color: #1DB954; /* Razer green */
+        }
+
+        .product2 p {
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+
+        .container3 {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #111;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #ffffff;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ffffff;
+            padding-bottom: 10px;
+        }
+
+        .section3 {
+            margin-bottom: 20px;
+        }
+
+        .section3 h3 {
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        .section3 table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .section3 table td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .section3 table td:first-child {
+            font-weight: bold;
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="/img/game-controller.png" alt=""> Computers</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a class="nav-links1"  href="/index.html">HOME</a></li>
+                <li><img src="/img/kart.png" alt=""></li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+    <section class="hero">
+    <div class="container">
+        <div class="image-container">
+            <img src="/img/2.png" alt="Lenovo LOQ Tower">
+        </div>
+        <div class="content-container">
+            <h2 class="title">Lenovo LOQ Towe</tr>r<br>14th Gen (Intel)</h2>
+            <div class="rating">
+                ★★★★★
+                <span>4.6 (28)</span>
+            </div>
+            <p class="added-to-cart">Added to cart 100+ times recently</p>
+            <p class="price">Starting at<br>₹66,730</p>
+            <p class="exchange-offer">Exchange Offer: Get bonus of up to ₹20,000 + Exchange Value of your device! <a href="#">Trade In Now</a></p>
+            <a href="#" class="button">View Models</a>
+        </div>
+    </div>
+</section>
+<section class="hero3">
+    <div class="container3">
+        <h2>Specifications</h2>
+
+        <div class="section3">
+            <h3>Sales Package</h3>
+            <table>
+                <tr>
+                    <td>In The Box</td>
+                    <td>1 LED, 1 CPU, 1 KEYBOARD, 1 MOUSE & POWER CABLE, Speaker, Webcam, Wifi Dongle</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section3">
+            <h3>General</h3>
+            <table>
+                <tr>
+                    <td>Model Name</td>
+                    <td>15-500-128-19-wifi</td>
+                </tr>
+                <tr>
+                    <td>Series</td>
+                    <td>Assembled Desktop</td>
+                </tr>
+                <tr>
+                    <td>Part Number</td>
+                    <td>AGFSDHYSA</td>
+                </tr>
+                <tr>
+                    <td>Colour</td>
+                    <td>Multicolor</td>
+                </tr>
+                <tr>
+                    <td>Brand</td>
+                    <td>TECH- Assemblers</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section3">
+            <h3>System Features</h3>
+            <table>
+                <tr>
+                    <td>Processor Name</td>
+                    <td>Core i5</td>
+                </tr>
+                <tr>
+                    <td>Chipset</td>
+                    <td>H 61 chipset</td>
+                </tr>
+                <tr>
+                    <td>Processor Brand</td>
+                    <td>Intel</td>
+                </tr>
+                <tr>
+                    <td>Processor </div>Frequency</td>
+                    </div><td>3.4</td>
+                </tr>
+                <tr>
+                    <td>Operating System</td>
+                    <td>Windows 10 Pro</td>
+                </tr>
+                <tr>
+                    <td>Processor Model</td>
+                    <td>Assembled Desktop-128 SSD</td>
+                </tr>
+            </table>
+        </div>
+    </div></div>
+        
+    </div>
+</section>
+
+
+
+
+    <section class="hero2">
+        <div class="container2">
+            <div class="product2" onclick="window.location.href = '/3rd.html';" style="cursor: pointer;">
+                <img src="/img/3.png" alt="Razer Blade 16">
+                <h2>GeForce RTX™ 4090</h2>
+                <p>SLIMMER. SMARTER. SHARPER.</p>
+                <p>Gaming Desktop with up to NVIDIA® GeForce RTX™ 5090 Laptop Graphics and up to an AMD Ryzen™ AI 9 370 HX Processor.</p>
+            </div>
+            <div class="product2" onclick="window.location.href = '/3rd.html';" style="cursor: pointer;">
+                <img src="/img/4.png" alt="Razer Blade 18">
+                <h2>NVIDIA® GeForce RTX™ 5090</h2>
+                <p>THE MOST POWERFUL BLADE EVER</p>
+                <p>Gaming NVIDIA GeForce RTX™ 5090 Laptop Graphics and an Intel® Core™ Ultra 9 275HX Processor.</p>
+            </div>
+        </div></section>
+</body>
+</html>
